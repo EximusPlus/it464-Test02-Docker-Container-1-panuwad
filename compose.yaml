@@ -14,7 +14,7 @@ services:
     networks:
       - _________-zone  # (1.6) ต้องเชื่อมกับวงปิดสำหรับ DB
     volumes:
-      - __________:var/lib/mysql  # (1.7) เติมชื่อ Named Volume [9]
+      - __________:var/lib/mysql  # (1.7) เติมชื่อ Named Volume ที่ประกาศด้านล่าง [5.1]
     secrets:
       - __________ # (1.8) เติมชื่อ Secret ที่ประกาศด้านล่าง [10]
 
@@ -72,7 +72,7 @@ networks:
     driver: bridge
 
 volumes:
-  db-volume:  # (5.1) ประกาศชื่อ Named Volume ให้ตรงกับด้านบน [10]
+  db-volume:  # (5.1) ประกาศชื่อ Named Volume ให้ตรงกับด้านบน [1.7]
 
 configs:
   my-nginx-conf:

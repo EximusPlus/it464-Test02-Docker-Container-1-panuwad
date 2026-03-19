@@ -1,6 +1,6 @@
 <?php
 // 1. กำหนดค่าการเชื่อมต่อฐานข้อมูลโดยดึงชื่อจาก .env [5]
-$host = getenv('DB_HOST'); // แก้ไขให้ตรงกับค่าทีอยู่ใน Docker Compose หรือ .env
+$host = getenv('MY_USERNAME'); // แก้ไขให้ตรงกับค่าทีอยู่ใน Docker Compose หรือ .env
 $user = getenv('DB_USER'); // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 $db   = getenv('DB_NAME'); // แก้ไขให้ตรงกับค่าที่อยู่ใน Docker Compose หรือ .env
 
